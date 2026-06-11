@@ -11,16 +11,16 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t edulearn4 .'
+                bat 'cd EduLearn && docker build -t edulearn .'
             }
         }
 
         stage('Run Container') {
             steps {
                 bat '''
-                docker stop edulearn4 >nul 2>&1
-                docker rm edulearn4 >nul 2>&1
-                docker run -d -p 8081:80 --name edulearn4 edulearn4
+                docker stop edulearn >nul 2>&1
+                docker rm edulearn >nul 2>&1
+                docker run -d -p 8081:80 --name edulearn edulearn
                 '''
             }
         }
