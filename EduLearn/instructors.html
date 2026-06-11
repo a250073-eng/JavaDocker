@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instructors - EduLearn</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.banner{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.instructors{
+    padding:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.profile{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.card h3{
+    margin-top:15px;
+    color:#0f172a;
+}
+
+.role{
+    color:#2563eb;
+    margin:10px 0;
+    font-weight:bold;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:40px;
+    background:white;
+    margin:30px;
+    border-radius:15px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">EduLearn</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="resources.html">Resources</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="testimonials.html">Testimonials</a>
+           </nav>
+</header>
+
+<section class="banner">
+    <h1>Meet Our Expert Instructors</h1>
+    <p>Learn from experienced professionals and industry experts.</p>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h2>20+</h2>
+        <p>Expert Trainers</p>
+    </div>
+
+    <div class="stat">
+        <h2>5000+</h2>
+        <p>Students Trained</p>
+    </div>
+
+    <div class="stat">
+        <h2>50+</h2>
+        <p>Courses Available</p>
+    </div>
+</section>
+
+<section class="instructors">
+
+    <div class="card">
+        <div class="profile">AK</div>
+        <h3>Arjun Kumar</h3>
+        <div class="role">Web Development Expert</div>
+        <p>10+ years of experience in front-end and full-stack development.</p>
+    </div>
+
+    <div class="card">
+        <div class="profile">SP</div>
+        <h3>Sneha Patil</h3>
+        <div class="role">Python Trainer</div>
+        <p>Specialist in Python programming, automation and data science.</p>
+    </div>
+
+    <div class="card">
+        <div class="profile">RJ</div>
+        <h3>Rahul Joshi</h3>
+        <div class="role">AI & ML Mentor</div>
+        <p>Experienced machine learning engineer and AI researcher.</p>
+    </div>
+
+    <div class="card">
+        <div class="profile">PM</div>
+        <h3>Priya Mehta</h3>
+        <div class="role">Cyber Security Analyst</div>
+        <p>Expert in ethical hacking, digital forensics and security testing.</p>
+    </div>
+
+    <div class="card">
+        <div class="profile">VS</div>
+        <h3>Vikram Shah</h3>
+        <div class="role">Cloud Architect</div>
+        <p>Certified AWS and Azure professional with industry expertise.</p>
+    </div>
+
+    <div class="card">
+        <div class="profile">DK</div>
+        <h3>Deepak Kulkarni</h3>
+        <div class="role">DevOps Engineer</div>
+        <p>Specialized in Docker, Jenkins, Kubernetes and CI/CD pipelines.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

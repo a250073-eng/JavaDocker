@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Testimonials - EduLearn</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.banner{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.stat-card{
+    background:white;
+    width:220px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.testimonials{
+    padding:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.stars{
+    color:gold;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.student{
+    display:flex;
+    align-items:center;
+}
+
+.avatar{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+.student-info h4{
+    color:#0f172a;
+}
+
+.student-info span{
+    color:#777;
+    font-size:14px;
+}
+
+.success{
+    margin:50px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.success h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.success p{
+    color:#555;
+    line-height:1.8;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EduLearn</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="resources.html">Resources</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="testimonials.html">Testimonials</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>Student Testimonials</h1>
+    <p>Hear what our learners say about their learning journey.</p>
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>15,000+</h2>
+        <p>Happy Students</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>4.9/5</h2>
+        <p>Average Rating</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>92%</h2>
+        <p>Course Completion</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>8,000+</h2>
+        <p>Certified Learners</p>
+    </div>
+
+</section>
+
+<section class="testimonials">
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Web Development course helped me build real-world projects.
+            The instructors explained concepts clearly and made learning enjoyable.
+        </p>
+
+        <div class="student">
+            <div class="avatar">AS</div>
+            <div class="student-info">
+                <h4>Amit Sharma</h4>
+                <span>Web Developer</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The Python course was structured perfectly. I gained confidence and
+            improved my programming skills significantly.
+        </p>
+
+        <div class="student">
+            <div class="avatar">RP</div>
+            <div class="student-info">
+                <h4>Riya Patil</h4>
+                <span>Software Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The AI and Machine Learning training helped me secure an internship.
+            The practical projects were extremely useful.
+        </p>
+
+        <div class="student">
+            <div class="avatar">VK</div>
+            <div class="student-info">
+                <h4>Vikas Kumar</h4>
+                <span>AI Intern</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            Cyber Security modules were well-designed and covered industry
+            standards. Highly recommended for beginners.
+        </p>
+
+        <div class="student">
+            <div class="avatar">SP</div>
+            <div class="student-info">
+                <h4>Sneha Patil</h4>
+                <span>Security Analyst</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            The certification programs improved my resume and helped me stand out
+            during placement interviews.
+        </p>
+
+        <div class="student">
+            <div class="avatar">AK</div>
+            <div class="student-info">
+                <h4>Arjun Kulkarni</h4>
+                <span>Cloud Engineer</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="stars">★★★★★</div>
+        <p>
+            Excellent learning platform with professional instructors and
+            quality study resources for every course.
+        </p>
+
+        <div class="student">
+            <div class="avatar">PM</div>
+            <div class="student-info">
+                <h4>Priya Mehta</h4>
+                <span>DevOps Associate</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="success">
+
+    <h2>Student Success Stories</h2>
+
+    <p>
+        Thousands of students have successfully completed courses through
+        EduLearn and achieved their career goals. Many learners have secured
+        internships, job opportunities, promotions, and industry-recognized
+        certifications by developing practical skills through our platform.
+    </p>
+
+</section>
+
+<footer>
+    <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

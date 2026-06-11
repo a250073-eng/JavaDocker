@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certifications - EduLearn</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.banner{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.stat-card{
+    background:white;
+    width:220px;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.certificates{
+    padding:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.cert-card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.cert-card:hover{
+    transform:translateY(-10px);
+}
+
+.cert-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.cert-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.btn{
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.eligibility{
+    background:white;
+    margin:50px;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.eligibility h2{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.eligibility ul{
+    margin-left:20px;
+    color:#555;
+    line-height:2;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EduLearn</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="resources.html">Resources</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="testimonials.html">Testimonials</a>
+    </nav>
+</header>
+
+<section class="banner">
+    <h1>Professional Certifications</h1>
+    <p>Earn industry-recognized certificates and showcase your skills.</p>
+</section>
+
+<section class="stats">
+
+    <div class="stat-card">
+        <h2>10,000+</h2>
+        <p>Certificates Issued</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>95%</h2>
+        <p>Completion Rate</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>50+</h2>
+        <p>Certification Programs</p>
+    </div>
+
+    <div class="stat-card">
+        <h2>500+</h2>
+        <p>Hiring Partners</p>
+    </div>
+
+</section>
+
+<section class="certificates">
+
+    <div class="cert-card">
+        <h3>Web Development Certificate</h3>
+        <p>Validate your front-end and back-end development skills with a professional certificate.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="cert-card">
+        <h3>Python Programming Certificate</h3>
+        <p>Demonstrate expertise in Python programming and software development.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="cert-card">
+        <h3>Artificial Intelligence Certificate</h3>
+        <p>Gain recognition for your knowledge of AI, Machine Learning and Data Science.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="cert-card">
+        <h3>Cyber Security Certificate</h3>
+        <p>Showcase your cybersecurity skills and understanding of modern security practices.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="cert-card">
+        <h3>Cloud Computing Certificate</h3>
+        <p>Verify your cloud deployment and infrastructure management expertise.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <div class="cert-card">
+        <h3>DevOps Professional Certificate</h3>
+        <p>Prove your skills in Git, Docker, Jenkins and CI/CD implementation.</p>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+</section>
+
+<section class="eligibility">
+
+    <h2>Certification Eligibility</h2>
+
+    <ul>
+        <li>Complete all course modules successfully.</li>
+        <li>Achieve at least 60% score in assessments.</li>
+        <li>Submit required projects and assignments.</li>
+        <li>Maintain active course participation.</li>
+        <li>Pass the final certification examination.</li>
+    </ul>
+
+</section>
+
+<footer>
+    <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

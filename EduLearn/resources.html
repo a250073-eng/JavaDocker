@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources - EduLearn</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.banner{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.banner p{
+    font-size:18px;
+}
+
+.resource-section{
+    padding:60px;
+}
+
+.resource-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.resource-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.resource-card:hover{
+    transform:translateY(-10px);
+}
+
+.resource-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.resource-card p{
+    color:#555;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    padding:50px;
+}
+
+.stat-box{
+    background:white;
+    width:220px;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-box h2{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EduLearn</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="resources.html">Resources</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="testimonials.html">Testimonials</a>
+           </nav>
+</header>
+
+<section class="banner">
+    <h1>Learning Resources</h1>
+    <p>Access study materials, notes, eBooks and practice resources.</p>
+</section>
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h2>500+</h2>
+        <p>Study Notes</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>120+</h2>
+        <p>eBooks</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>300+</h2>
+        <p>Practice Sets</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>50+</h2>
+        <p>Video Tutorials</p>
+    </div>
+
+</section>
+
+<section class="resource-section">
+
+<div class="resource-grid">
+
+    <div class="resource-card">
+        <h3>Web Development Notes</h3>
+        <p>Comprehensive HTML, CSS and JavaScript study materials.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>Python eBook</h3>
+        <p>Beginner to advanced Python programming guide.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>Cyber Security Guide</h3>
+        <p>Network security, ethical hacking and threat analysis resources.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>Cloud Computing Notes</h3>
+        <p>Learn AWS, Azure and cloud deployment concepts.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>AI & Machine Learning</h3>
+        <p>Study materials covering ML algorithms and AI concepts.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+    <div class="resource-card">
+        <h3>DevOps Handbook</h3>
+        <p>Docker, Jenkins, Git and CI/CD pipeline documentation.</p>
+        <a href="#" class="btn">Download</a>
+    </div>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

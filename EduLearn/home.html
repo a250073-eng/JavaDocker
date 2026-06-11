@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLearn - Home</title>
+	<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+}
+
+/* Header */
+
+header{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e2e8f0;
+    transform:scale(1.05);
+}
+
+/* Feature Cards */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:80px 40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* About */
+
+.about{
+    text-align:center;
+    padding:70px 30px;
+}
+
+.about h2{
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    color:#555;
+}
+
+/* Footer */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>    
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EduLearn</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="resources.html">Resources</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Learn Skills That Shape Your Future</h1>
+        <p>Join thousands of learners and build your career with industry-ready courses.</p>
+
+        <a href="courses.html" class="btn">
+            Explore Courses
+        </a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+
+        <div class="card">
+            <h3>50+ Courses</h3>
+            <p>Learn Web Development, AI, Cloud Computing, DevOps and more.</p>
+        </div>
+
+        <div class="card">
+            <h3>Expert Instructors</h3>
+            <p>Get guidance from experienced industry professionals.</p>
+        </div>
+
+        <div class="card">
+            <h3>Certifications</h3>
+            <p>Earn valuable certificates and boost your resume.</p>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Why Choose EduLearn?</h2>
+
+        <p>
+            EduLearn is an innovative online learning platform designed to help
+            students gain practical skills and advance their careers through
+            high-quality courses, expert mentoring, and professional certifications.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

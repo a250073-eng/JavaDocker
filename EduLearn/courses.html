@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses - EduLearn</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+.banner{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+}
+
+.banner h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.courses{
+    padding:60px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+}
+
+.course-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.course-card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:8px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">EduLearn</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="resources.html">Resources</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="testimonials.html">Testimonials</a>
+          </nav>
+</header>
+
+<section class="banner">
+    <h1>Our Courses</h1>
+    <p>Choose from industry-relevant courses and start learning today.</p>
+</section>
+
+<section class="courses">
+
+    <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Learn HTML, CSS, JavaScript and modern web technologies.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+        <h3>Python Programming</h3>
+        <p>Master Python programming from beginner to advanced level.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+        <h3>Artificial Intelligence</h3>
+        <p>Explore machine learning, deep learning and AI concepts.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+        <h3>Cyber Security</h3>
+        <p>Learn ethical hacking, network security and threat analysis.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+        <h3>Cloud Computing</h3>
+        <p>Understand AWS, Azure and cloud deployment techniques.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+    <div class="course-card">
+        <h3>DevOps</h3>
+        <p>Learn Git, Docker, Jenkins and CI/CD pipeline implementation.</p>
+        <a href="#" class="btn">Enroll Now</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 EduLearn Portal | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
