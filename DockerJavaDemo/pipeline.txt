@@ -1,0 +1,121 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clone') {
+            steps {
+                git 'https://github.com/a250073-eng/JenkinsDemo.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                bat 'echo Building Project...'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                bat 'test.bat'
+            }
+        }
+
+    }
+}
+
+----------------------
+
+pipeline {
+    agent any
+
+    triggers {
+        pollSCM('H/5 * * * *')
+    }
+
+    stages {
+
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/USERNAME/REPOSITORY.git'
+            }
+        }
+
+        stage('Compile Java Program') {
+            steps {
+                bat 'javac HelloWorld.java'
+            }
+        }
+
+        stage('Run Java Program') {
+            steps {
+                bat 'java HelloWorld'
+            }
+        }
+    }
+}
+
+---------------------------------
+
+pipeline {
+    agent any
+
+    triggers {
+        pollSCM('H/5 * * * *')
+    }
+
+    stages {
+
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main',
+                url: 'https://github.com/USERNAME/REPOSITORY.git'
+            }
+        }
+
+        stage('Install Dependencies') {
+            steps {
+                bat 'npm install'
+            }
+        }
+
+        stage('Deploy Application') {
+            steps {
+                bat 'start cmd /c node index.js'
+            }
+        }
+
+    }
+}
+
+=------------------------
+
+
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Fetch JSP Application') {
+            steps {
+                bat 'xcopy /E /Y C:\\JSPApp workspace\\JSPApp\\'
+            }
+        }
+
+        stage('Deploy to Tomcat') {
+            steps {
+                bat 'xcopy /E /Y workspace\\JSPApp\\* C:\\apache-tomcat-9.0\\webapps\\JSPApp\\'
+            }
+        }
+
+        stage('Verify Deployment') {
+            steps {
+                echo 'Application deployed successfully.'
+            }
+        }
+    }
+}
+
+-----------------------------------
+
